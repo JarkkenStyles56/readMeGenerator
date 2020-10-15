@@ -33,11 +33,22 @@ function questions() {
 
             type: "checkbox",
             name: "licenses",
-            message: "What is this project licensed under?"
+            message: "What is this project licensed under?",
             choices: [
-                new inquirer.Separator(' = Licenses = '), {
-                    name
-                }
+                new inquirer.Separator(' = Licenses = '),
+                {
+                    name: "https://img.shields.io/npm/l/inquirer?style=plastic"
+                },
+                {
+                    name: "https://img.shields.io/npm/l/inquirer?style=plastic"
+                },
+                {
+                    name: "https://img.shields.io/npm/l/inquirer?style=plastic"
+                },
+                {
+                    name: "https://img.shields.io/npm/l/inquirer?style=plastic"
+                },
+
             ]
         },
         {
@@ -55,23 +66,29 @@ function questions() {
         {
 
             type: "input",
-            name: "questions",
+            name: "username",
             message: "What is your gitHub username?"
         },
         {
 
             type: "input",
-            name: "questions",
+            name: "email",
             message: "What is your email address?"
         },
     ]);
 };
 questions()
 // function to write README file
-//function writeToFile(fileName, data) {}
+async function writeToFile(fileName, data) {
+
+
+}
 
 // function to initialize program
-//function init() {}
+function init() {
+
+
+}
 
 // function call to initialize program
-//init();
+init();
